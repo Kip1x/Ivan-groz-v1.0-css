@@ -1,0 +1,153 @@
+/* Общие настройки (как на главной) */
+html { 
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #2c3e50;
+}
+
+header {
+    background: linear-gradient(135deg, #5b5e34, #2d3015);
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 { 
+    margin: 0; 
+    font-size: 3rem; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+}
+
+/* Навигация */
+nav {
+    background: #4a4d2a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover { 
+    background-color: #768021; 
+}
+
+.container { 
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 50px auto; 
+}
+
+/* Кнопка возврата */
+.back {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 12px 25px;
+    background: #768021;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(118, 128, 33, 0.3);
+    transition: 0.3s;
+}
+
+.back-btn:hover { 
+    transform: translateX(-5px); 
+    background: #5b5e34; 
+}
+
+/* Новые карточки персонажей */
+.person-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.person-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.15); 
+}
+
+/* Блок с фото */
+.card-photo {
+    flex: 1 1 400px;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Блок с текстом */
+.person-info {
+    flex: 2 1 500px;
+    padding: 40px;
+}
+
+.person-info h3 {
+    font-size: 2rem;
+    color: #4a4d2a;
+    margin-top: 0;
+    border-bottom: 3px solid #768021;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.itog {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.biography {
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.reform-green { 
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+.terror-red { 
+    background: #ffebee;
+    color: #c62828; 
+}
+footer { 
+    text-align: center; 
+    padding: 1rem; 
+    background: #2d3015; color: white; 
+}
