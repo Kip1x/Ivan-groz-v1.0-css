@@ -1,6 +1,3 @@
-/* Подключаем красивый шрифт для заголовков */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap');
-
 html {
     scroll-behavior: smooth;
 }
@@ -10,14 +7,12 @@ body {
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f4f1ea; /* Цвет легкого пергамента */
+    background-color: #f4f1ea;
     color: #2c3e50;
 }
 
-/* ШАПКА */
 header {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('images/карта.jpg') center/cover; /* Карта как фон шапки */
+    background: linear-gradient(135deg, #5b5e34, #2d3015);
     height: 200px;
     display: flex;
     align-items: center;
@@ -32,13 +27,7 @@ header h1 {
     font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin: 0;
-    padding: 20px;
-    border-top: 2px solid #d4af37;
-    border-bottom: 2px solid #d4af37;
 }
-
-/* НАВИГАЦИЯ */
 nav {
     background: #2d3015;
     position: sticky;
@@ -55,7 +44,9 @@ nav ul {
     justify-content: center;
     flex-wrap: wrap;
 }
-
+nav li {
+    margin-bottom: 5px;
+}
 nav a {
     display: block;
     padding: 18px 25px;
@@ -72,7 +63,7 @@ nav a:hover {
     background: rgba(255,255,255,0.05);
 }
 
-/* КОНТЕЙНЕР И БЛОКИ */
+
 .container {
     max-width: 1000px;
     margin: 50px auto;
@@ -98,13 +89,11 @@ h2 {
     display: inline-block;
 }
 
-/* СПИСКИ ИТОГОВ */
 ul {
     padding-left: 20px;
 }
-
 li {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 strong {
@@ -117,7 +106,7 @@ figcaption {
     font-style: italic;
 }
 
-/* ГАЛЕРЕЯ (СЕТКА) */
+
 #gallery div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -131,7 +120,7 @@ figcaption {
     object-fit: cover;
     border-radius: 10px;
     transition: 0.4s;
-    filter: sepia(20%); /* Легкий исторический эффект */
+    filter: sepia(20%); 
 }
 
 #gallery img:hover {
@@ -147,10 +136,29 @@ footer {
     padding: 2rem;
     font-size: 0.9rem;
 }
-
-/* МОБИЛЬНАЯ АДАПТАЦИЯ */
-@media (max-width: 768px) {
-    header h1 { font-size: 1.8rem; }
-    .container { margin: 20px auto; }
-    section { padding: 25px; }
+.quiz-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.question p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+button {
+    padding: 10px 20px;
+    background-color: #cc5151;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #a00000;
 }

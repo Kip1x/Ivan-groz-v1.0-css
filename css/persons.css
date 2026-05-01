@@ -1,4 +1,4 @@
-/* Общие настройки (как на главной) */
+
 html { 
     scroll-behavior: smooth; 
 }
@@ -26,7 +26,7 @@ header h1 {
     letter-spacing: 3px; 
 }
 
-/* Навигация */
+
 nav {
     background: #4a4d2a;
     position: sticky;
@@ -55,7 +55,7 @@ nav a:hover {
     margin: 50px auto; 
 }
 
-/* Кнопка возврата */
+
 .back {
     display: inline-block;
     margin-bottom: 30px;
@@ -74,7 +74,7 @@ nav a:hover {
     background: #5b5e34; 
 }
 
-/* Новые карточки персонажей */
+
 .person-card {
     display: flex;
     flex-wrap: wrap;
@@ -91,7 +91,7 @@ nav a:hover {
     box-shadow: 0 15px 45px rgba(0,0,0,0.15); 
 }
 
-/* Блок с фото */
+
 .card-photo {
     flex: 1 1 400px;
     min-height: 400px;
@@ -100,7 +100,7 @@ nav a:hover {
     position: relative;
 }
 
-/* Блок с текстом */
+
 .person-info {
     flex: 2 1 500px;
     padding: 40px;
