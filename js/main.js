@@ -42,22 +42,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const captionText = document.getElementById("caption");
     const closeBtn = document.querySelector('.modal-close');
 
-    // Находим все изображения именно в секции reform
     const reformImages = document.querySelectorAll('#reform img');
     const galleryImages = document.querySelectorAll('#gallery img');
 
     reformImages.forEach(img => {
         img.onclick = function() {
-            modal.style.display = "flex"; // Показываем окно
-            modalImg.src = this.src;      // Берем путь к фото
-            captionText.innerHTML = this.alt; // Берем текст из alt как подпись
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
         }
     });
     galleryImages.forEach(img => {
         img.onclick = function() {
-            modal.style.display = "flex"; // Показываем окно
-            modalImg.src = this.src;      // Берем путь к фото
-            captionText.innerHTML = this.alt; // Берем текст из alt как подпись
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
         }
     });
     modal.onclick = function(event) {
