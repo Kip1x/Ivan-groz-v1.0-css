@@ -1,4 +1,4 @@
-
+// квиз
 function checkQuiz() {
     const form = document.getElementById('quiz-form');
     const resultDiv = document.getElementById('quiz-result');
@@ -33,3 +33,36 @@ function checkQuiz() {
         resultDiv.innerHTML += " <br>Стоит еще раз внимательно изучить материал страницы.";
     }
 }
+
+
+//модальное окно
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById("fullImage");
+    const captionText = document.getElementById("caption");
+    const closeBtn = document.querySelector('.modal-close');
+
+    // Находим все изображения именно в секции reform
+    const reformImages = document.querySelectorAll('#reform img');
+    const galleryImages = document.querySelectorAll('#gallery img');
+
+    reformImages.forEach(img => {
+        img.onclick = function() {
+            modal.style.display = "flex"; // Показываем окно
+            modalImg.src = this.src;      // Берем путь к фото
+            captionText.innerHTML = this.alt; // Берем текст из alt как подпись
+        }
+    });
+    galleryImages.forEach(img => {
+        img.onclick = function() {
+            modal.style.display = "flex"; // Показываем окно
+            modalImg.src = this.src;      // Берем путь к фото
+            captionText.innerHTML = this.alt; // Берем текст из alt как подпись
+        }
+    });
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+});
