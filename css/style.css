@@ -28,6 +28,9 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+img {
+    object-fit: contain;
+}
 nav {
     background: #2d3015;
     position: sticky;
