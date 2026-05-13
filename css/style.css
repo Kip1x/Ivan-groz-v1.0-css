@@ -119,9 +119,8 @@ figcaption {
 }
 
 .modal-overlay {
-    display: none; /* Скрыто по умолчанию */
+    display: none;
     position: fixed;
-    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -180,7 +179,6 @@ footer {
 }
 .question {
     margin-bottom: 20px;
-    text-align: left;
 }
 .question p {
     margin-bottom: 10px;
@@ -197,4 +195,3 @@ button {
 button:hover{
     background-color: #a00000;
 }
-12
