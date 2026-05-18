@@ -110,11 +110,32 @@ figcaption {
 }
 #reform img {
     cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
 }
 
 #reform img:hover {
     transform: scale(1.03);
-    filter: sepia(0%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+#Bio img {
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+#Bio img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+#vnechnaiapolitika img {
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+#vnechnaiapolitika img:hover {
+    transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
@@ -154,12 +175,10 @@ figcaption {
     object-fit: cover;
     border-radius: 10px;
     transition: 0.4s;
-    filter: sepia(20%); 
 }
 
 #gallery img:hover {
     transform: scale(1.03);
-    filter: sepia(0%);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 

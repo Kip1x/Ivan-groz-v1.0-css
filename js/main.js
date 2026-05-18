@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const reformImages = document.querySelectorAll('#reform img');
     const galleryImages = document.querySelectorAll('#gallery img');
+    const BioImages = document.querySelectorAll('#Bio img');
+    const vnechnaiapolitika = document.querySelectorAll('#vnechnaiapolitika img');
+
 
     reformImages.forEach(img => {
         img.onclick = function() {
@@ -53,6 +56,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     galleryImages.forEach(img => {
+        img.onclick = function() {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    });
+    BioImages.forEach(img => {
+        img.onclick = function() {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    });
+    vnechnaiapolitika.forEach(img => {
         img.onclick = function() {
             modal.style.display = "flex";
             modalImg.src = this.src;
