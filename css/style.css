@@ -26,7 +26,11 @@ header h1 {
     font-family: 'Lora', serif;
     font-size: 2.8rem;
     text-transform: uppercase;
+<<<<<<< HEAD
     letter-spacing: 4px;
+=======
+    letter-spacing: 2px;
+>>>>>>> 178d9bd (fix git)
 }
 img {
     object-fit: contain;
@@ -48,7 +52,11 @@ nav ul {
     flex-wrap: wrap;
 }
 nav li {
+<<<<<<< HEAD
     margin-bottom: 5px;
+=======
+    margin: 0px;
+>>>>>>> 178d9bd (fix git)
 }
 nav a {
     display: block;
@@ -58,12 +66,20 @@ nav a {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.85rem;
+<<<<<<< HEAD
     transition: 0.3s;
+=======
+    transition: background-color 0.2s ease, color 0.2s ease;
+>>>>>>> 178d9bd (fix git)
 }
 
 nav a:hover {
     color: #d4af37;
+<<<<<<< HEAD
     background: rgba(255,255,255,0.05);
+=======
+    background: rgba(255, 255, 255, 0.05);
+>>>>>>> 178d9bd (fix git)
 }
 
 
@@ -110,7 +126,11 @@ figcaption {
 }
 #reform img {
     cursor: pointer;
+<<<<<<< HEAD
     transition: 0.4s;
+=======
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> 178d9bd (fix git)
     border-radius: 10px;
 }
 
@@ -120,7 +140,11 @@ figcaption {
 }
 #Bio img {
     cursor: pointer;
+<<<<<<< HEAD
     transition: 0.4s;
+=======
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> 178d9bd (fix git)
     border-radius: 10px;
 }
 
@@ -130,7 +154,11 @@ figcaption {
 }
 #vnechnaiapolitika img {
     cursor: pointer;
+<<<<<<< HEAD
     transition: 0.4s;
+=======
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> 178d9bd (fix git)
     border-radius: 10px;
 }
 
@@ -174,7 +202,11 @@ figcaption {
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
+<<<<<<< HEAD
     transition: 0.4s;
+=======
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> 178d9bd (fix git)
 }
 
 #gallery img:hover {
@@ -192,6 +224,7 @@ footer {
 .quiz-section {
     background-color: #f4f4f4;
     padding: 20px;
+<<<<<<< HEAD
     margin: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -200,6 +233,12 @@ footer {
     margin-bottom: 20px;
 }
 .question p {
+=======
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.quiz p {
+>>>>>>> 178d9bd (fix git)
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -213,4 +252,9 @@ button {
 }
 button:hover{
     background-color: #a00000;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 178d9bd (fix git)

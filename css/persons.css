@@ -69,11 +69,14 @@ nav a:hover {
     transition: 0.3s;
 }
 
+<<<<<<< HEAD
 .back-btn:hover { 
     transform: translateX(-5px); 
     background: #5b5e34; 
 }
 
+=======
+>>>>>>> 178d9bd (fix git)
 
 .person-card {
     display: flex;
