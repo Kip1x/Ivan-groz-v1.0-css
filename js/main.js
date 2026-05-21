@@ -11,25 +11,6 @@ function checkQuiz() {
         score += parseInt(value);
     }
 
-<<<<<<< HEAD
-    const answeredQuestions = Array.from(formData.keys()).length;
-    
-    if (answeredQuestions < totalQuestions) {
-        resultDiv.style.color = "#3498db";
-        resultDiv.innerHTML = `Пожалуйста, ответьте на все вопросы. (Отвечено: ${answeredQuestions} из ${totalQuestions})`;
-        return;
-    }
-
-    resultDiv.innerHTML = `Ваш результат: ${score} из ${totalQuestions} правильных ответов.`;
-    
-    
-    if (score === totalQuestions) {
-        resultDiv.style.color = "#27ae60";
-        resultDiv.innerHTML += " <br>Великолепно! Вы настоящий знаток эпохи Ивана IV.";
-    } else if (score >= 5) {
-        resultDiv.style.color = "#f39c12";
-        resultDiv.innerHTML += " <br>Хорошие знания, вы неплохо разбираетесь в истории.";
-=======
     const answeredquiz = Array.from(formData.keys()).length;
     const totalquiz = 8;
 
@@ -48,7 +29,6 @@ function checkQuiz() {
     } else if (score >= 5) {
         resultDiv.style.color = "#f39c12";
         resultDiv.innerHTML += " <br>Хорошие знания, вы неплохо разбираетесь в истории Ивана Грозного.";
->>>>>>> 178d9bd (fix git)
     } else {
         resultDiv.style.color = "#e74c3c";
         resultDiv.innerHTML += " <br>Стоит еще раз внимательно изучить материал страницы.";
